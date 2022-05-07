@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <!--Main-->
+        <section class="container">
+            <nav class="navbar">
+                <div class="navbar__content">
+                    <img src="./assets/Logo/lego.png" alt="">
+                    <ul>
+                        <li>
+                            <a href="">EXCLUSIVOS</a>
+                        </li>
+                        <li>
+                            <a href="">NUEVOS</a>
+                        </li>
+                        <li>
+                            <a href="">TARJETAS DE REGALO</a>
+                        </li>
+                        <li>
+                            <a href="">ENCUENTRA UNA TIENDA</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="main-content">
+                <p>Diseña tu</p>
+                <h1>Super heroe</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ab. Perspiciatis, odio error dolor
+                    laboriosam, consequuntur laudantium sapiente autem iusto ex a, eveniet nostrum consectetur tempore
+                    itaque ab praesentium minima!</p>
+            </section>
+
+
+            <section class="side-content">
+                <div></div>
+                <p>Superman</p>
+                <img src="./assets/SuperMan/super-man.png" alt="">
+            </section>
+
+            <section class="footer">
+                <div id="btn-spiderMan">
+                    <img src="./assets/SpiderMan/spiderman.png" alt="spiderman">
+                </div>
+                <div id="btn-batman">
+                    <img src="./assets/BatMan/batman.webp" alt="batman">
+                </div>
+                <div id="btn-robin">
+                    <img src="./assets/Robin/robin.png" alt="robin">
+                </div>
+            </section>
+        </section>
+        <!--Loader-->
+        <section class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <!--Modal-->
+        <!--#1-->
+        <section class="modal hidden" id="modalSpiderMan">
+            <div class="modal__container">
+                <img class="modal__container--close" src="./assets/utils/icons8-macos-close-32.png" alt="">
+                <div class="modal__container--slider">
+                    <input type="radio" name="slider-1" id="radioSpiderMan-1" checked>
+                    <input type="radio" name="slider-1" id="radioSpiderMan-2">
+                    <input type="radio" name="slider-1" id="radioSpiderMan-3">
+                    <div class="cards">
+                        <label for="radioSpiderMan-1" id="cardSpiderMan-1" class="card">
+                            <img src="./assets/SpiderMan/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="">
+                        </label>
+                        <label for="radioSpiderMan-2" id="cardSpiderMan-2" class="card">
+                            <img src="./assets/SpiderMan/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="">
+                        </label>
+                        <label for="radioSpiderMan-3" id="cardSpiderMan-3" class="card">
+                            <img src="./assets/SpiderMan/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="modal__container--button">Lo quiero!</button>
+            </div>
+        </section>
+        <!--#2-->
+        <section class="modal hidden" id="modalBatman">
+            <div class="modal__container">
+                <img class="modal__container--close" src="./assets/utils/icons8-macos-close-32.png" alt="">
+                <div class="modal__container--slider">
+                    <input type="radio" name="slider-2" id="radioBatman-1" checked>
+                    <input type="radio" name="slider-2" id="radioBatman-2">
+                    <input type="radio" name="slider-2" id="radioBatman-3">
+                    <div class="cards">
+                        <label for="radioBatman-1" id="cardBatman-1" class="card">
+                            <img src="./assets/BatMan/png-transparent-lego-batman-batman-lego-minifigures-the-lego-movie-coupon-lego-heroes-superhero-fictional-character-thumbnail-removebg-preview.png" alt="">
+                        </label>
+                        <label for="radioBatman-2" id="cardBatman-2" class="card">
+                            <img src="./assets/BatMan/Batman.png" alt="">
+                        </label>
+                        <label for="radioBatman-3" id="cardBatman-3" class="card">
+                            <img src="./assets/BatMan/pngwing.com.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="modal__container--button">Lo quiero!</button>
+            </div>
+        </section>
+
+        <!--#3-->
+        <section class="modal hidden" id="modalRobin">
+            <div class="modal__container">
+                <img class="modal__container--close" src="./assets/utils/icons8-macos-close-32.png" alt="">
+                <div class="modal__container--slider">
+                    <input type="radio" name="slider-3" id="radioRobin-1" checked>
+                    <input type="radio" name="slider-3" id="radioRobin-2">
+                    <input type="radio" name="slider-3" id="radioRobin-3">
+                    <div class="cards">
+                        <label for="radioRobin-1" id="cardRobin-1" class="card">
+                            <img src="./assets/Robin/pngegg.png" alt="">
+                        </label>
+                        <label for="radioRobin-2" id="cardRobin-2" class="card">
+                            <img src="./assets/Robin/robin2.png" alt="">
+                        </label>
+                        <label for="radioRobin-3" id="cardRobin-3" class="card">
+                            <img src="./assets/Robin/robin3.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <button class="modal__container--button">Lo quiero!</button>
+            </div>
+        </section>
+        <div id="overlay" class="hidden"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
